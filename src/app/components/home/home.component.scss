@@ -1,0 +1,105 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    .products {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+
+        .selected-products {
+            img {
+                width: 700px;
+                height: 700px;
+                background-color: red;
+            }
+        }
+
+        .other-products {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            img {
+                width: 400px;
+                height: 400px;
+                background-color: yellow;
+            }
+        }
+    }
+
+    .product-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .product-name {
+            font-size: 100px;
+        }
+
+        .price {
+            font-size: 32px;
+        }
+
+        .colors-title {
+            align-self: start;
+            margin-bottom: 10px;
+        }
+
+        .colors {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            width: 100%;
+            margin-bottom: 10px;
+
+            .color {
+                padding: 10px 50px;
+                background-color: #5CE1E6;
+                border-radius: 10px;
+                margin-right: 5px;
+            }
+        }
+
+        .quantity-title {
+            align-self: start;
+            margin-bottom: 10px;
+        }
+
+        .quantity-input {
+            background-color: #5CE1E6;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-self: start;
+
+            span {
+                font-size: 32px;
+                cursor: pointer;
+            }
+
+            input {
+                border: none;
+                margin: 0 5px 0 5px;
+                background-color: transparent;
+                outline: none;
+                text-align: center;
+                font-size: 32px;
+            }
+
+            input[type="number"]::-webkit-inner-spin-button,
+            input[type="number"]::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                appearance: none;
+                margin: 0;
+            }
+        }
+
+        p {
+            align-self: start;
+            width: 500px;
+        }
+    }
+}
