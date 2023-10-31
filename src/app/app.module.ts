@@ -8,6 +8,7 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { ProductsComponent } from './components/products/products.component';
 import { CheckOutComponent } from './components/check-out/check-out.component';
+import { FaqComponent } from './components/faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CheckOutComponent } from './components/check-out/check-out.component';
     AboutUsComponent,
     ContactUsComponent,
     ProductsComponent,
-    CheckOutComponent
+    CheckOutComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,
