@@ -4,11 +4,10 @@
       <div class="side-menu" [ngClass]="{'open': isMenuOpen}">
         <a routerLink="home" (click)="toggleMenu()">Home</a>
         <a routerLink="about-us"  (click)="toggleMenu()">About</a>
-        <a href="faq" (click)="toggleMenu()">Faq`</a>
+        <a href="contact-us" (click)="toggleMenu()">Contact Us</a>
         <span class="close-button" (click)="toggleMenu()">Close</span>
 
       </div>
-      <!--    <button class="menu-toggle" (click)="toggleMenu()">&#9776;</button>-->
       <svg (click)="toggleMenu()" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
            class="bi bi-list" viewBox="0 0 16 16">
         <path fill-rule="evenodd"
@@ -26,7 +25,7 @@
       </svg>
     </div>
   </nav>
-    <router-outlet ></router-outlet>
+    <router-outlet #test></router-outlet>
   <footer>
     Impressum -  Datenschutzerklärung -  © Copyright 2023 routime - All Rights
     Reserved

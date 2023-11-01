@@ -9,6 +9,7 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
 import { ProductsComponent } from './components/products/products.component';
 import { CheckOutComponent } from './components/check-out/check-out.component';
 import { FaqComponent } from './components/faq/faq.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -20,10 +21,11 @@ import { FaqComponent } from './components/faq/faq.component';
     CheckOutComponent,
     FaqComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

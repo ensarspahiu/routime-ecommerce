@@ -1,4 +1,4 @@
-import {Component, Renderer2} from '@angular/core';
+import {Component, ElementRef, Renderer2, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,12 +8,14 @@ import {Component, Renderer2} from '@angular/core';
 export class AppComponent {
   title = 'routime-ecommerce';
 
+  @ViewChild('test') test: ElementRef | undefined;
+
   isMenuOpen: boolean = false;
 
   constructor(private renderer: Renderer2) {
   }
   adjustBrightness(brightnessValue: number) {
-    this.renderer.setStyle(document.body, 'filter', `brightness(${brightnessValue})`);
+    this.renderer.setStyle(this.test?.nativeElement, 'filter', `brightness(${brightnessValue})`);
   }
 
   toggleMenu() {

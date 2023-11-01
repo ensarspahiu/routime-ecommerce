@@ -1,5 +1,5 @@
 .low-brightnes{
-  filter: brightness(0.2);
+  filter: brightness(0.5);
 }
 
 nav {
@@ -35,6 +35,7 @@ footer {
   height: 100%;
   transition: left 0.3s;
   z-index: 99999;
+  filter: brightness(1) !important;
 }
 
 .menu-toggle {
