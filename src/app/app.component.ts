@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Renderer2} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,20 @@ export class AppComponent {
 
   isMenuOpen: boolean = false;
 
+  constructor(private renderer: Renderer2) {
+  }
+  adjustBrightness(brightnessValue: number) {
+    this.renderer.setStyle(document.body, 'filter', `brightness(${brightnessValue})`);
+  }
+
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
+
+    if (this.isMenuOpen){
+      this.adjustBrightness(0.2)
+    }else{
+      this.adjustBrightness(1)
+
+    }
   }
 }
