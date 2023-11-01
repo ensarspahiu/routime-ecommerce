@@ -1,51 +1,19 @@
-.content {
-    display: flex;
-    flex-direction: column;
+.background-img-container {
+    background-color: black;
+    height: 300px;
+    position: relative;
+}
 
-    .title {
-        background-color: #EEE5DB;
-        padding: 50px;
-        text-align: end;
-        font-size: 32px;
-    }
-
-    .background-img-container {
-        background-color: black;
-        height: 300px;
-
-        .absolute-container {
-            position: absolute;
-            top: 400px;
-            left: 10%;
-            border-radius: 10px;
-            background-color: red;
-            container: white;
-            padding: 20px;
-        }
-    }
-
-
-    .intro-container {
-        padding: 120px;
-        display: flex;
-        justify-content: center;
-        background-color: #EEE5DB;
-
-        img {
-            width: 400px;
-            height: 400px;
-            margin-right: 60px;
-            border-radius: 10px;
-        }
-
-        .intro-title {
-            font-size: 32px;
-        }
-
-        .intro-description {
-            width: 300px;
-            margin-right: 60px;
-        }
-    }
-
+.absolute-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    padding: 20px;
+}
+.card {
+    border-radius: 20px;
 }
