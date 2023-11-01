@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-
+  product = {
+    name: 'Product of the Month',
+    description: 'Explore our featured product with outstanding features.',
+    image: 'assets/featured-product.jpg'
+  };
 }

@@ -4,7 +4,9 @@
       <div class="side-menu" [ngClass]="{'open': isMenuOpen}">
         <a routerLink="home" (click)="toggleMenu()">Home</a>
         <a routerLink="about-us"  (click)="toggleMenu()">About</a>
-        <a href="contact-us" (click)="toggleMenu()">Contact Us</a>
+        <a routerLink="contact-us" (click)="toggleMenu()">Contact Us</a>
+        <a routerLink="products" (click)="toggleMenu()">Products</a>
+
         <span class="close-button" (click)="toggleMenu()">Close</span>
 
       </div>
