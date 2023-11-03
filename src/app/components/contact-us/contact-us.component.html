@@ -1,31 +1,27 @@
 <div class="container">
-  <h2 class="text-right pt-4">Contact Us</h2>
-  <div class="contact-us">
-    <span class="touch">Lets get in touch</span>
+  <h2 class="text-right pt-4">Kontakt</h2>
+  <span class="touch">Let's get in touch</span>
 
-    <form (ngSubmit)="submitForm()">
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" [(ngModel)]="contact.name" required>
+  <form (ngSubmit)="submitForm()" class="mt-5">
+    <div class="row">
+      <div class="col-md-6 form-group">
+        <input type="text" class="form-control" placeholder="Name" id="name" name="name" [(ngModel)]="contact.name"
+          required>
       </div>
-
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" [(ngModel)]="contact.email" required>
+      <div class="col-md-6 form-group">
+        <input type="email" class="form-control" placeholder="E-Mail" id="email" name="email" [(ngModel)]="contact.email"
+          required>
       </div>
+    </div>
+    <div class="form-group">
+      <input type="tel" class="form-control" placeholder="Telefonummer" id="phone" name="phone" [(ngModel)]="contact.phone"
+        required>
+    </div>
+    <div class="form-group">
+      <textarea class="form-control" placeholder="Kommentar" id="comment" name="comment" [(ngModel)]="contact.comment"
+        required></textarea>
+    </div>
 
-      <div class="form-group">
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" [(ngModel)]="contact.phone" required>
-      </div>
-
-      <div class="form-group">
-        <label for="comment">Comment:</label>
-        <textarea id="comment" name="comment" [(ngModel)]="contact.comment" required></textarea>
-      </div>
-
-      <button type="submit">Send</button>
-    </form>
-  </div>
-
+    <button type="submit" class="btn btn-primary">Send</button>
+  </form>
 </div>

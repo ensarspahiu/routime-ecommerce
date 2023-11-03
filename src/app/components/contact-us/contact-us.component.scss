@@ -1,14 +1,17 @@
-.contact-us {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  }
+.container {
+  font-family: 'Nunito', sans-serif;
+  max-width: 900px;
+}
 
 h1 {
   font-size: 24px;
   text-align: center;
   margin-bottom: 20px;
   color: #333;
+}
+
+h2 {
+  font-size: 64px;
 }
 
 .form-group {
@@ -29,7 +32,7 @@ textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 16px;
 }
 
@@ -51,7 +54,8 @@ button {
 button:hover {
   //background-color: #0056b3;
 }
-.touch{
+
+.touch {
   font-size: 30px;
   display: flex;
   justify-content: center;
