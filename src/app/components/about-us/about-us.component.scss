@@ -1,7 +1,9 @@
 .background-img-container {
-    background-color: black;
-    height: 300px;
+    background: url('../../../assets/images/background.jpg');
+    height: 560px;
     position: relative;
+    background-size: cover;
+    background-position: center;
 }
 
 .absolute-container {
@@ -10,10 +12,42 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
-    background-color: red;
-    color: white;
+    background-color: #EEE5DB;
+    color: #2E2A39;
     padding: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    text-align: center;
 }
-.card {
-    border-radius: 20px;
+
+#animated-text {
+    animation: fadeInAnimation 3s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 60px;
+}
+
+h3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color: #2E2A39BF;
 }
