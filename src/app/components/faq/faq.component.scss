@@ -1,3 +1,6 @@
+.container {
+    max-width: 1000px;
+}
 .accordion-item {
     background-color: #f9f9f9;
     border: 1px solid #e6e6e6;
@@ -37,4 +40,20 @@
     border-radius: 0 0 15px 15px;
     padding: 15px 20px;
     background-color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color: #2E2A39BF;
+}
+
+button {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #2E2A39BF;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 52px;
+    color: #333;
 }
