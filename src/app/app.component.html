@@ -1,9 +1,9 @@
-<div >
+<div>
   <nav>
     <div>
       <div class="side-menu" [ngClass]="{'open': isMenuOpen}">
         <a routerLink="home" (click)="toggleMenu()">Home</a>
-        <a routerLink="about-us"  (click)="toggleMenu()">About</a>
+        <a routerLink="about-us" (click)="toggleMenu()">About</a>
         <a routerLink="contact-us" (click)="toggleMenu()">Contact Us</a>
         <a routerLink="products" (click)="toggleMenu()">Products</a>
 
@@ -11,9 +11,9 @@
 
       </div>
       <svg (click)="toggleMenu()" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
-           class="bi bi-list" viewBox="0 0 16 16">
+        class="bi bi-list" viewBox="0 0 16 16">
         <path fill-rule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
       </svg>
     </div>
     <div>
@@ -23,12 +23,12 @@
 
     </div>
   </nav>
-    <router-outlet #test></router-outlet>
+  <router-outlet #test></router-outlet>
   <footer>
     Impressum -  Datenschutzerklärung -  © Copyright 2023 routime - All Rights
     Reserved
     <br>
-    Powered by : <a style="text-decoration: none; color:#7fd858" href="https://www.nexiphor.com/"> Nexiphor</a>
+    Powered by : <a style="text-decoration: none; color:#005d60" href="https://www.nexiphor.com/" target="_blank"> Nexiphor</a>
 
   </footer>
 </div>

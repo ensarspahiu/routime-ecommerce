@@ -6,12 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent {
-  products = [
-    {
-      name: 'Product 1',
-      description: 'This is a creative product description for Product 1.',
-      image: 'assets/product1.jpg'
-    },
-    // Add more products here
-  ];
+  product = {
+    name: 'Product 1',
+    description: 'This is a creative product description for Product 1.',
+    image: 'assets/product1.jpg'
+  }
 }

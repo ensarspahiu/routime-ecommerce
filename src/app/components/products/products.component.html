@@ -1,42 +1,69 @@
-<div class="products">
-  <h1>Vorbestellungen jetzt möglich!</h1>
+<div class="container">
+  <h1 class="text-center">Vorbestellungen jetzt möglich!</h1>
   <span class="sub-title">Sichere dir deine Routime Wanduhr und erleichtere deinen Tagesablauf.</span>
-
+  <div class="custom-text">
+    <p>Wir entwickeln uns stetig weiter! Freue dich auf regelmäßige Updates und neue Funktionen, die deine Routime
+      Wanduhr immer besser machen.</p>
+  </div>
   <span class="before-facts">Sichere dir deine Routime Uhr jetzt durch eine Vorbestellung und profitiere von
-exklusiven Vorteilen!</span>
-  <div class="caratecistis">
-      <div class="text-group">
-        <span class="header"> <img src="assets/images/quantity-icon.svg" alt="">Limitierte Stückzahl</span>
-        <span>Wir sind ein Startup und können nur eine begrenzte
-              Anzahl von Uhren produzieren. Mit einer Vorbestellung sicherst du dir eine der
-              ersten einzigartigen Routime Uhren.</span>
+    exklusiven Vorteilen!</span>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <img class="card-img-top" src="assets/images/quantity-icon.svg" alt="">
+        <div class="card-body">
+          <h5>Limitierte Stückzahl</h5>
+          <p>Wir sind ein Startup und können nur eine begrenzte Anzahl von Uhren produzieren. Mit einer
+            Vorbestellung sicherst du dir eine der ersten einzigartigen Routime Uhren.</p>
+        </div>
       </div>
-    <div class="text-group">
-      <span class="header"><img src="assets/images/discount-icon.svg" alt="">10% Preisnachlass</span>
-          <span>Alle Vorbestellungen erhalten einen exklusiven Nachlass
-           von 10% auf den regulären Preis.</span>
     </div>
-    <div class="text-group">
-      <span class="header"><img src="assets/images/influence-final.svg" alt=""> Einfluss auf zukünftige Entwicklungen:</span>
-      <span>Wir hören auf unsere Kunden. Als
-einer der ersten Nutzer hast du die Möglichkeit, uns Feedback zu geben, das
-direkt in die Weiterentwicklung der Routime Uhr einfließt</span>
-    </div>
-    <div class="text-group">
-        <span class="header"><img src="assets/images/security.svg" alt="">Sicherheit und Transparenz:</span>
-        <span>Sollten wir das Produkt wider Erwarten nicht
-        ausliefern können, garantieren wir die vollständige Rückerstattung des
-        Kaufpreises.</span>
+    <div class="col-md-6">
+      <div class="card">
+        <img class="card-img-top" src="assets/images/influence-final.svg" alt="">
+        <div class="card-body">
+          <h5>Einfluss auf zukünftige Entwicklungen:</h5>
+          <p>Wir hören auf unsere Kunden. Als einer der ersten Nutzer hast du die Möglichkeit, uns Feedback
+            zu geben, das direkt in die Weiterentwicklung der Routime Uhr einfließt.</p>
+        </div>
+      </div>
     </div>
   </div>
-
-  <div class="product-list">
-    <div class="product-card" *ngFor="let product of products">
-      <img [src]="product.image" alt="{{product.name}}">
-      <h2>{{product.name}}</h2>
-      <p>{{product.description}}</p>
+  <!-- <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card product-card">
+        <div class="row">
+          <div class="col-5">
+            <img src="https://via.placeholder.com/150" alt="Product Image">
+          </div>
+          <div class="col-7 product-details">
+            <h2>Product Name</h2>
+            <p>This is a placeholder description for the product. It can be replaced with the actual product
+              description.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <img class="card-img-top" src="assets/images/discount-icon.svg" alt="">
+        <div class="card-body">
+          <h5>10% Preisnachlass</h5>
+          <p>Alle Vorbestellungen erhalten einen exklusiven Nachlass von 10% auf den regulären Preis.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <img class="card-img-top" src="assets/images/security.svg" alt="">
+        <div class="card-body">
+          <h5>Sicherheit und Transparenz:</h5>
+          <p>Sollten wir das Produkt wider Erwarten nicht ausliefern können, garantieren wir die vollständige
+            Rückerstattung des Kaufpreises.</p>
+        </div>
+      </div>
     </div>
   </div>
-  <span class="under-text">Wir entwickeln uns stetig weiter! Freue dich auf regelmäßige Updates und neue Funktionen,
-        die deine Routime Wanduhr immer besser machen</span>
 </div>
