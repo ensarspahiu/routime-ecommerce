@@ -2,12 +2,12 @@
   <nav>
     <div>
       <div class="side-menu" [ngClass]="{'open': isMenuOpen}">
-        <a routerLink="home" (click)="toggleMenu()">Home</a>
-        <a routerLink="about-us" (click)="toggleMenu()">About</a>
-        <a routerLink="contact-us" (click)="toggleMenu()">Contact Us</a>
-        <a routerLink="products" (click)="toggleMenu()">Products</a>
-
-        <span class="close-button" (click)="toggleMenu()">Close</span>
+        <div class="inner-list" [ngClass]="{'opened-inner-list': isMenuOpen}">
+          <a routerLink="home" (click)="toggleMenu()">Home</a>
+          <a routerLink="about-us" (click)="toggleMenu()">About</a>
+          <a routerLink="contact-us" (click)="toggleMenu()">Contact Us</a>
+          <a routerLink="products" (click)="toggleMenu()">Products</a>
+        </div>
 
       </div>
       <svg (click)="toggleMenu()" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
@@ -17,7 +17,7 @@
       </svg>
     </div>
     <div>
-      <span class="title">Routime</span>
+      <span class="title" routerLink="home">Routime</span>
     </div>
     <div>
 
@@ -32,3 +32,6 @@
 
   </footer>
 </div>
+
+
+<div class="shadow"></div>

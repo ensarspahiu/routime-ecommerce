@@ -1,6 +1,7 @@
 .container {
   font-family: 'Nunito', sans-serif;
   max-width: 900px;
+  height: 100vh;
 }
 
 h1 {
@@ -51,9 +52,9 @@ button {
   transition: background-color 0.3s;
 }
 
-button:hover {
-  //background-color: #0056b3;
-}
+//button:hover {
+//  //background-color: #0056b3;
+//}
 
 .touch {
   font-size: 30px;

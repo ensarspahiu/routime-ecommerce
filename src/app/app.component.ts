@@ -12,8 +12,7 @@ export class AppComponent {
 
   isMenuOpen: boolean = false;
 
-  constructor(private renderer: Renderer2) {
-  }
+  constructor(private renderer: Renderer2) {}
   adjustBrightness(brightnessValue: number) {
     this.renderer.setStyle(this.test?.nativeElement, 'filter', `brightness(${brightnessValue})`);
   }
@@ -23,9 +22,10 @@ export class AppComponent {
 
     if (this.isMenuOpen){
       this.adjustBrightness(0.2)
+      this.renderer.addClass(document.body, 'no-scroll');
     }else{
       this.adjustBrightness(1)
-
+      this.renderer.removeClass(document.body, 'no-scroll');
     }
   }
 }
