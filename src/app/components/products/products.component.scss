@@ -1,7 +1,7 @@
 .products {
   text-align: center;
   padding: 20px;
-  background-color: #f8f8f8;
+  background-color: transparent;
   height: 100vh;
 
 
@@ -26,6 +26,7 @@
     justify-content: center;
 
     .text-group{
+      background-color: #e8e4e4;
 
       img{
         width: 50px;
@@ -39,14 +40,19 @@
       flex-wrap: wrap;
       width: 500px;
       padding: 20px;
-      border: 1px solid #5CE1E6;
+      box-shadow: 10px 10px 10px;
       border-radius: 15px;
       margin-right: 20px;
+      transition: transform 0.2s;
+
       .header{
         font-weight: 600;
         margin-bottom: 10px;
         font-size: 22px;
       }
+    }
+    .text-group:hover {
+      transform: translateY(-20px);
     }
   }
 
