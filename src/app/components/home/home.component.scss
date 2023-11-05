@@ -1,6 +1,7 @@
 .logo{
-  width: 100%;
-  height: 100%;
+  opacity: 0;
+  transform: translateX(300px);
+  transition: 550ms;
 }
 
 .home-background {
@@ -31,10 +32,16 @@
   align-items: center;
   padding: 15px;
 
+
+
   .sub-title{
     margin-top: 30px;
     font-size: 32px;
     text-align: center;
+
+    opacity: 0;
+    transform: translateX(300px);
+    transition: 550ms;
   }
   .facts{
     width: 100%;
@@ -86,6 +93,10 @@
   justify-content: space-between;
   padding: 30px;
 
+.show{
+  transform: translateX(0);
+  opacity: 1;
+}
 
   .product-img{
     width: 100%;
