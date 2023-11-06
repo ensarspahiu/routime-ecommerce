@@ -10,6 +10,7 @@ import { ProductsComponent } from './components/products/products.component';
 import { CheckOutComponent } from './components/check-out/check-out.component';
 import { FaqComponent } from './components/faq/faq.component';
 import {FormsModule} from "@angular/forms";
+import { ImpressumComponent } from './components/impressum/impressum.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {FormsModule} from "@angular/forms";
     ContactUsComponent,
     ProductsComponent,
     CheckOutComponent,
-    FaqComponent
+    FaqComponent,
+    ImpressumComponent
   ],
     imports: [
         BrowserModule,

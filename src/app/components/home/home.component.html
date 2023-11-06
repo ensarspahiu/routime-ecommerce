@@ -90,7 +90,8 @@
           <li>Reparaturservice</li>
           <li>Keine Strahlung durch WLAN oder ähnliches</li>
           <li>Keine Aufnahmefunktion für erhöhte Sicherheit</li>
-          <li>Zukunftssicher durch Updates: Wir planen regelmäßige Updates, die einfach und bequem über die Routime-App installiert werden können. So bleibt deine Routime Wanduhr immer auf dem neuesten Stand.</li>
+          <li>Zukunftssicher durch Updates: Wir planen regelmäßige Updates, die einfach und bequem über die Routime-App
+            installiert werden können. So bleibt deine Routime Wanduhr immer auf dem neuesten Stand.</li>
         </ul>
       </div>
     </div>
@@ -154,6 +155,27 @@
     </div>
   </div>
 </div>
-<div class="contact">
-  <app-contact-us></app-contact-us>
+<div class="contact pt-5 pb-5">
+  <div class="container">
+    <h1 class="text-center">Schreibe uns eine Nachricht !</h1>
+    <form (ngSubmit)="submitForm()">
+      <div class="row">
+        <div class="col-md-6 form-group">
+          <input type="text" class="form-control" placeholder="Name" id="name" name="name" [(ngModel)]="contact.name"
+            required>
+        </div>
+        <div class="col-md-6 form-group">
+          <input type="email" class="form-control" placeholder="E-Mail" id="email" name="email"
+            [(ngModel)]="contact.email" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <textarea class="form-control" placeholder="Kommentar" id="comment" name="comment" [(ngModel)]="contact.comment"
+          required></textarea>
+      </div>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
 </div>

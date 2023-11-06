@@ -7,6 +7,17 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  contact = {
+    name: '',
+    email: '',
+    phone: '',
+    comment: ''
+  };
+
+  submitForm() {
+    // You can handle the form submission here, e.g., send data to a server.
+    console.log('Form submitted:', this.contact);
+  }
 
   ngAfterViewInit(){
     const options = {
