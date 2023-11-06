@@ -53,3 +53,38 @@
   line-height: 1.6;
   margin-bottom: 20px;
 }
+
+.about-us {
+  h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #5CE1E6;
+  }
+
+  h3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+  }
+
+  p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color: #2E2A39BF;
+  }
+
+  span {
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    color: #2E2A39BF;
+    font-weight: bold;
+  }
+}
+
+.faq {
+  background-color: #FFE990;
+}
+
+.contact {
+  background-color: #d4f9fb;
+}
