@@ -59,3 +59,16 @@ h1 {
     font-size: 52px;
     color: #333;
 }
+
+
+@media (max-width: 768px) {
+    .container {
+      padding: 8px !important; 
+      h1 {
+        font-size: 32px;
+      }
+      button {
+        font-size: 14px;
+      }
+    }
+  }
