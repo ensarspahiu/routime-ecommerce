@@ -38,11 +38,14 @@ footer {
 
 
 .side-menu {
+  font-family: 'Nunito', sans-serif;
+  color: #2E2A39;
+  font-size: 14px;
   width: 250px;
   position: fixed;
   top: 75px;
   left: -250px;
-  background-color: #EEE5DB;
+  background-color: #F0F0E8;
   height: 100%;
   transition: left 0.2s;
   z-index: 99999;
@@ -56,7 +59,7 @@ footer {
     width: 0;
   }
   .opened-inner-list{
-    width: 300px !important;
+    width: 350px !important;
   }
 
 }
@@ -70,7 +73,7 @@ footer {
 }
 
 .side-menu a {
-  padding: 15px 25px;
+  padding: 15px 35px;
   text-decoration: none;
   font-size: 20px;
   color: black;
@@ -81,6 +84,7 @@ footer {
 
 .side-menu a:hover {
   background-color: #FFDE59;
+  color: #38abaf;
 }
 
 .close-button {
