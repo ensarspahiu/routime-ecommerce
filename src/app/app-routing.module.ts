@@ -9,7 +9,7 @@ import { ProductImagesComponent } from './components/product-images/product-imag
 
 const routes: Routes = [
   {
-    path: '', redirectTo: 'about-us', pathMatch: 'full'
+    path: '', redirectTo: 'home', pathMatch: 'full'
   },
   {
     path: 'home', component: HomeComponent
