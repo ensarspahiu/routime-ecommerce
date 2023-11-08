@@ -11,6 +11,7 @@ import { CheckOutComponent } from './components/check-out/check-out.component';
 import { FaqComponent } from './components/faq/faq.component';
 import {FormsModule} from "@angular/forms";
 import { ImpressumComponent } from './components/impressum/impressum.component';
+import { ProductImagesComponent } from './components/product-images/product-images.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ImpressumComponent } from './components/impressum/impressum.component';
     ProductsComponent,
     CheckOutComponent,
     FaqComponent,
-    ImpressumComponent
+    ImpressumComponent,
+    ProductImagesComponent
   ],
     imports: [
         BrowserModule,

@@ -5,6 +5,7 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import {ContactUsComponent} from "./components/contact-us/contact-us.component";
 import {ProductsComponent} from "./components/products/products.component";
 import { ImpressumComponent } from './components/impressum/impressum.component';
+import { ProductImagesComponent } from './components/product-images/product-images.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,9 @@ const routes: Routes = [
   },
   {
     path: 'impressum', component: ImpressumComponent
+  },
+  {
+    path: 'product-images', component: ProductImagesComponent
   }
 ];
 
