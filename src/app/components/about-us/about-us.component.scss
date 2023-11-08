@@ -6,6 +6,21 @@
     background-position: center;
 }
 
+.title{
+  opacity: 0;
+  //transform: translateX(100px);
+  transition: 550ms;
+}
+.show{
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+}
+.teuta-text{
+  opacity: 0;
+  transform: translateX(10px);
+  transition: 550ms;
+}
+
 .absolute-container {
     position: absolute;
     top: 50%;
