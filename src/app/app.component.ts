@@ -16,7 +16,9 @@ export class AppComponent {
   adjustBrightness(brightnessValue: number) {
     this.renderer.setStyle(this.test?.nativeElement, 'filter', `brightness(${brightnessValue})`);
   }
-
+  scrollToTop() {
+    window.scrollTo(0, 0);
+  }
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
 

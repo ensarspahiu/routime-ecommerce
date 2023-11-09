@@ -24,14 +24,14 @@ export class HomeComponent {
       root: null,
       rootMargin: '0px',
     };
-    const logo = document.querySelectorAll('img')
+    const logo = document.querySelectorAll('.hide')
 
     const observer: IntersectionObserver = new IntersectionObserver((entries: any) => {
       entries.forEach((entry: any) => {
         entry.target.classList.toggle('show',entry.isIntersecting)
       });
     },{
-      threshold: 0.3,
+      threshold: 0.4,
     });
     logo.forEach(logo => {
       observer.observe(logo)
