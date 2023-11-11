@@ -31,7 +31,7 @@ export class HomeComponent {
         entry.target.classList.toggle('show',entry.isIntersecting)
       });
     },{
-      threshold: 0.4,
+      threshold: 0.3,
     });
     logo.forEach(logo => {
       observer.observe(logo)
