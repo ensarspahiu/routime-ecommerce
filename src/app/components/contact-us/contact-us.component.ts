@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {FormBuilder, FormGroup} from "@angular/forms";
+import { FormBuilder, FormGroup } from "@angular/forms";
+import { EmailService } from 'src/app/services/email-service.';
 
 @Component({
   selector: 'app-contact-us',
@@ -10,18 +11,20 @@ export class ContactUsComponent {
 
   formGroup: FormGroup;
 
-  constructor(private formbuilder: FormBuilder) {
-   this.formGroup =  this.formbuilder.group({
-      name: ["",[]],
-      email: ["",[]],
-      comment:["",[]],
+  constructor(private formbuilder: FormBuilder, private emailService: EmailService) {
+    this.formGroup = this.formbuilder.group({
+      name: ["", []],
+      email: ["", []],
+      comment: ["", []],
     })
   }
 
   submitForm() {
-    // You can handle the form submission here, e.g., send data to a server.
-    console.log('Form submitted:', this.formGroup.value);
-    this.formGroup.reset()
+    this.emailService.sendEmail(this.formGroup.value).subscribe(response => {
+      console.log(response);
+    }, error => {
+      console.log(error);
+    });
   }
 
 }

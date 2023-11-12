@@ -12,6 +12,7 @@ import { FaqComponent } from './components/faq/faq.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { ImpressumComponent } from './components/impressum/impressum.component';
 import { ProductImagesComponent } from './components/product-images/product-images.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ProductImagesComponent } from './components/product-images/product-imag
     imports: [
         BrowserModule,
         AppRoutingModule,
+        HttpClientModule,
         FormsModule,
         ReactiveFormsModule
     ],
