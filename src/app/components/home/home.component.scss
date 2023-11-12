@@ -192,6 +192,34 @@
   }
 }
 
+.use-2 {
+  font-family: 'Nunito', sans-serif;
+
+  .container {
+    border-bottom: 10px dashed #5CE1E6;
+
+    .custom-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    h2 {
+      color: #ebbe0f;
+      font-weight: bold;
+    }
+
+    h4 {
+      color: #4ebfc3;
+      font-weight: bold;
+    }
+
+    ul {
+      color: #2E2A39BF;
+    }
+  }
+
+}
+
 .video {
   h1 {
     font-family: 'Nunito', sans-serif;
