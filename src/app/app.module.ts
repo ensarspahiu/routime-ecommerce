@@ -9,7 +9,7 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
 import { ProductsComponent } from './components/products/products.component';
 import { CheckOutComponent } from './components/check-out/check-out.component';
 import { FaqComponent } from './components/faq/faq.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { ImpressumComponent } from './components/impressum/impressum.component';
 import { ProductImagesComponent } from './components/product-images/product-images.component';
 
@@ -28,7 +28,8 @@ import { ProductImagesComponent } from './components/product-images/product-imag
     imports: [
         BrowserModule,
         AppRoutingModule,
-        FormsModule
+        FormsModule,
+        ReactiveFormsModule
     ],
   providers: [],
   bootstrap: [AppComponent]

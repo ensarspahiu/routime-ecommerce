@@ -1,24 +1,23 @@
-<div class="container">
+<div class="container" [formGroup]="formGroup">
   <h2 class="text-center pt-4">Kontakt</h2>
   <span class="touch">Du hast Fragen zu Routime ? <br>Schreibe uns eine Nachricht  !</span>
 
-  <form (ngSubmit)="submitForm()" class="mt-5">
+  <div   class="mt-5">
     <div class="row">
       <div class="col-md-6 form-group">
-        <input type="text" class="form-control" placeholder="Name" id="name" name="name" [(ngModel)]="contact.name"
+        <input type="text" formControlName="name" class="form-control" placeholder="Name" id="name"
           required>
       </div>
       <div class="col-md-6 form-group">
-        <input type="email" class="form-control" placeholder="E-Mail" id="email" name="email"
-          [(ngModel)]="contact.email" required>
+        <input type="email" class="form-control" placeholder="E-Mail" id="email"  formControlName="email" required>
       </div>
     </div>
 
     <div class="form-group">
-      <textarea class="form-control" placeholder="Kommentar" id="comment" name="comment" [(ngModel)]="contact.comment"
+      <textarea class="form-control" placeholder="Kommentar" formControlName="comment" id="comment"
         required></textarea>
     </div>
 
-    <button type="submit">Send</button>
-  </form>
+    <button (click)="submitForm()" type="submit">Send</button>
+  </div>
 </div>
