@@ -81,7 +81,8 @@
       <h1 class="fw-bold hide">Die smarte Kinderwanduhr für einen strukturierten Familienalltag</h1>
       <p class="fs-5 text-secondary hide">149 € UVP - Jetzt mit 20% Vorbestellungsrabatt!</p>
       <p class="fs-5 text-secondary hide">119 € Vorbestellangebot</p>
-      <button class="btn btn-primary px-4 py-2 rounded-3 border-0 hide" style="background-color: #5CE1E6;">Kaufe Jetzt</button>
+      <button class="btn btn-primary px-4 py-2 rounded-3 border-0 hide" style="background-color: #5CE1E6;">Kaufe
+        Jetzt</button>
       <p class="text-secondary mt-3 hide" style="font-size: 16px;">Routime ist die erste smarte Kinderwanduhr, speziell
         entwickelt, um den Alltag von Familien harmonischer und strukturierter zu gestalten. Unsere Uhr ist mehr als ein
         einfacher Zeitmesser; sie ist ein innovatives Tool, das hilft, den Tag besser zu organisieren und die
@@ -226,20 +227,18 @@
 <div class="contact pt-5 pb-5">
   <div class="container hide">
     <h1 class="text-center">Schreibe uns eine Nachricht !</h1>
-    <form (ngSubmit)="submitForm()">
+    <form [formGroup]="formGroup" (ngSubmit)="submitForm()">
       <div class="row">
         <div class="col-md-6 form-group">
-          <input type="text" class="form-control" placeholder="Name" id="name" name="name" formControlName="name"
-            required>
+          <input type="text" class="form-control" placeholder="Name" id="name" formControlName="name" required>
         </div>
         <div class="col-md-6 form-group">
-          <input type="email" class="form-control" placeholder="E-Mail" id="email" name="email" formControlName="email"
-            required>
+          <input type="email" class="form-control" placeholder="E-Mail" id="email" formControlName="email" required>
         </div>
       </div>
 
       <div class="form-group">
-        <textarea class="form-control" placeholder="Kommentar" id="comment" name="comment" formControlName="comment"
+        <textarea class="form-control" placeholder="Kommentar" id="comment" formControlName="comment"
           required></textarea>
       </div>
 
@@ -247,4 +246,3 @@
     </form>
   </div>
 </div>
-
