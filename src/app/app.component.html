@@ -1,23 +1,25 @@
 <div>
   <nav>
-    <div class="align-self-center" >
+    <div class="align-self-center">
       <div class="side-menu" [ngClass]="{'open': isMenuOpen}" (click)="toggleMenu()">
-        <div class="inner-list"  [ngClass]="{'opened-inner-list': isMenuOpen}">
+        <div class="inner-list" [ngClass]="{'opened-inner-list': isMenuOpen}">
           <br>
           <a routerLink="home" (click)="scrollToTop()">Home</a>
           <a routerLink="about-us" (click)="scrollToTop()">About</a>
           <a routerLink="contact-us" (click)="scrollToTop()">Contact Us</a>
-          <a routerLink="products" (click)="scrollToTop()" >Products</a>
+          <a routerLink="products" (click)="scrollToTop()">Products</a>
         </div>
 
       </div>
-      <svg *ngIf="!isMenuOpen" (click)="toggleMenu();" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
-        class="bi bi-list" viewBox="0 0 16 16">
+      <svg *ngIf="!isMenuOpen" (click)="toggleMenu();" xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+        fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
         <path fill-rule="evenodd"
           d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
       </svg>
-      <svg *ngIf="isMenuOpen" (click)="toggleMenu();" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+      <svg *ngIf="isMenuOpen" (click)="toggleMenu();" xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+        fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+        <path
+          d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
       </svg>
     </div>
     <div>
@@ -29,9 +31,11 @@
   </nav>
   <router-outlet #test></router-outlet>
   <footer>
-    <a style="text-decoration: none; color:#005d60" href="/impressum">Impressum - Datenschutzerklärung </a>- ©
-    Copyright 2023 Routime - All Rights
-    Reserve
+    <a style="text-decoration: none; color:#005d60" href="/impressum">Impressum - Datenschutzerklärung </a>
+    <span>- ©
+      Copyright 2023 Routime - All Rights Reserved
+    </span>
+    <img class="ms-5" src="assets/images/push.webp" style="width: 250px;" alt="">
   </footer>
 </div>
 
