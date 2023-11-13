@@ -22,6 +22,8 @@ export class ContactUsComponent {
   submitForm() {
     this.emailService.sendEmail(this.formGroup.value).subscribe(response => {
       console.log(response);
+      this.formGroup.reset()
+
     }, error => {
       console.log(error);
     });
