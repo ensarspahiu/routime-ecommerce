@@ -133,7 +133,7 @@
 </div>
 <div class="use-2 mb-5">
   <div class="container">
-    <div class="row justify-content-center mt-4 mb-4 hide">    
+    <div class="row justify-content-center mt-4 mb-4 hide">
       <div class="col-md-6 align-self-center">
         <img src="../../../assets/images/push-button.png" alt="" class="img-fluid mb-3 mb-md-0" style="width: 100%;">
       </div>
@@ -231,17 +231,17 @@
     <form (ngSubmit)="submitForm()">
       <div class="row">
         <div class="col-md-6 form-group">
-          <input type="text" class="form-control" placeholder="Name" id="name" name="name" [(ngModel)]="contact.name"
+          <input type="text" class="form-control" placeholder="Name" id="name" name="name" formControlName="name"
             required>
         </div>
         <div class="col-md-6 form-group">
-          <input type="email" class="form-control" placeholder="E-Mail" id="email" name="email"
-            [(ngModel)]="contact.email" required>
+          <input type="email" class="form-control" placeholder="E-Mail" id="email" name="email" formControlName="email"
+            required>
         </div>
       </div>
 
       <div class="form-group">
-        <textarea class="form-control" placeholder="Kommentar" id="comment" name="comment" [(ngModel)]="contact.comment"
+        <textarea class="form-control" placeholder="Kommentar" id="comment" name="comment" formControlName="comment"
           required></textarea>
       </div>
 

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { EmailService } from 'src/app/services/email-service.';
 
 @Component({
   selector: 'app-home',
@@ -6,20 +8,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-
-  contact = {
-    name: '',
-    email: '',
-    phone: '',
-    comment: ''
-  };
-
-  submitForm() {
-    // You can handle the form submission here, e.g., send data to a server.
-    console.log('Form submitted:', this.contact);
+  formGroup: FormGroup;
+  constructor(private formbuilder: FormBuilder, private emailService: EmailService) {
+    this.formGroup = this.formbuilder.group({
+      name: ["", []],
+      email: ["", []],
+      comment: ["", []],
+    })
   }
 
-  ngAfterViewInit(){
+  submitForm() {
+    this.emailService.sendEmail(this.formGroup.value).subscribe(response => {
+      console.log(response);
+    }, error => {
+      console.log(error);
+    });
+  }
+
+  ngAfterViewInit() {
     const options = {
       root: null,
       rootMargin: '0px',
@@ -28,9 +34,9 @@ export class HomeComponent {
 
     const observer: IntersectionObserver = new IntersectionObserver((entries: any) => {
       entries.forEach((entry: any) => {
-        entry.target.classList.toggle('show',entry.isIntersecting)
+        entry.target.classList.toggle('show', entry.isIntersecting)
       });
-    },{
+    }, {
       threshold: 0.3,
     });
     logo.forEach(logo => {
