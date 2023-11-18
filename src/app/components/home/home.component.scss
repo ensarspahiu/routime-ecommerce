@@ -1,20 +1,21 @@
 .logo {
-  width: 100%;
+  width: 90%;
   padding: 0 50px 0 50px;
   margin-top: 100px;
+  align-self: center;
 }
 
 .home-background {
-  background-color: #d4f9fb;
+  background-color: #FFFFFF;
   height: 100vh;
+  text-align: center;
 }
 
 .home-description {
   font-family: 'Nunito', sans-serif;
   font-size: 50px;
   font-weight: bold;
-  font-style: italic;
-  color: #5CE1E6;
+  color: #768990;
 }
 
 .title-container {
@@ -61,11 +62,12 @@
 }
 
 .about-us {
+  background-color: #F9F4EA;
   h1 {
     font-family: 'Nunito', sans-serif;
     font-size: 60px;
     font-weight: bold;
-    color: #5CE1E6;
+    color: black;
   }
 
   h3 {
@@ -88,11 +90,10 @@
 }
 
 .faq {
-  background-color: #FFE990;
+  background-color: #DFF7E9;
 }
 
 .contact {
-  background-color: #d4f9fb;
   font-family: 'Nunito', sans-serif;
 
   .container {
@@ -101,7 +102,7 @@
     h1 {
       font-size: 50px;
       font-weight: bold;
-      color: #f4cf3c;
+      color: black;
     }
 
     .form-group {
@@ -114,17 +115,17 @@
     textarea {
       width: 100%;
       padding: 10px;
-      border: 1px solid #f4cf3c;
+      border: 1px solid #F9F4EA;
       border-radius: 10px;
       font-size: 16px;
-      background: transparent;
+      background: #F9F4EA;
     }
 
     input[type="text"]::placeholder,
     input[type="email"]::placeholder,
     input[type="tel"]::placeholder,
     textarea::placeholder {
-      color: #b29521;
+      color: #768990;
     }
 
     textarea {
@@ -133,7 +134,7 @@
 
     button {
       background-color: #FFDE59;
-      color: #44b6ba;
+      color: black;
       font-weight: bold;
       padding: 10px 100px;
       border: none;
@@ -145,17 +146,16 @@
   }
 }
 
+.general-description {
+  background-color: #DFF7E9;
+}
+
 .description {
   font-family: 'Nunito', sans-serif;
 
-  .container {
-    border-top: 10px dashed #FFDE59;
-    border-bottom: 10px dashed #FFDE59;
-  }
-
   h2 {
     font-weight: bold;
-    color: #5CE1E6;
+    color: #768990;
   }
 
   p,
@@ -168,9 +168,6 @@
   font-family: 'Nunito', sans-serif;
 
   .container {
-    border-top: 10px dashed #5CE1E6;
-    border-bottom: 10px dashed #5CE1E6;
-
     .custom-list {
       list-style-type: none;
       padding: 0;
@@ -196,8 +193,6 @@
   font-family: 'Nunito', sans-serif;
 
   .container {
-    border-bottom: 10px dashed #5CE1E6;
-
     .custom-list {
       list-style-type: none;
       padding: 0;
@@ -225,14 +220,11 @@
     font-family: 'Nunito', sans-serif;
     font-size: 50px;
     font-weight: bold;
-    color: #5CE1E6;
+    color: black;
   }
 
   .video-container {
     border-radius: 20px;
-    border-top: 10px dashed #5CE1E6;
-    border-right: 10px dashed #5CE1E6;
-    border-left: 10px dashed #5CE1E6;
     position: relative;
     padding-bottom: 40%;
     height: 0;
@@ -245,6 +237,13 @@
     left: 0;
     width: 100%;
     height: 100%;
+  }
+}
+.product-container {
+  background-color: #F9F4EA;
+  .custom-carousel-icon {
+    fill: #000000;
+    background-color: #FFE990;
   }
 }
 
@@ -266,5 +265,6 @@
 
   .logo {
     margin-top: 100px;
+    width: 100%;
   }
 }

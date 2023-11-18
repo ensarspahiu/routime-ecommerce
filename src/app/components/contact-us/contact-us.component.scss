@@ -19,6 +19,11 @@ h2 {
   margin-bottom: 20px;
 }
 
+.contact-message {
+  font-size: 50px;
+  font-weight: bold;
+}
+
 label {
   font-weight: bold;
   display: block;
@@ -32,15 +37,14 @@ input[type="tel"],
 textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #F9F4EA;
   border-radius: 10px;
   font-size: 16px;
-  background-color: #5CE1E6;
+  background-color: #F9F4EA;
 }
 
 textarea:focus {
-  background-color: #5CE1E6;
-  /* Set the background color you want when the textarea is focused */
+  background-color: #F9F4EA;
 }
 
 textarea {
@@ -50,6 +54,7 @@ textarea {
 button {
   background-color: #ffde59;
   color: black;
+  font-weight: bold;
   padding: 10px 100px;
   border: none;
   border-radius: 10px;

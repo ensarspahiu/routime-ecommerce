@@ -27,7 +27,6 @@
 }
 
 .product {
-  border: 10px dashed #FFDE59;
   h1 {
     font-size: 40px;
   }
@@ -48,11 +47,20 @@ p {
 
 .custom-text {
   padding: 20px;
-  background-color: #5CE1E6;
+  background-color: #B3FFFF;
   color: #2E2A39;
   font-size: 1.2em;
   border-radius: 10px;
   width: 70%;
   margin: 20px auto;
   text-align: center;
-} 
+}
+
+.products-container {
+  background-color: #F9F4EA;
+}
+
+.custom-carousel-icon {
+  fill: #000000;
+  background-color: #FFE990;
+}
